@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 
 const PublicRoute = ({element,...rest}) => {
     const {isAuthenticated} = useAuth();
-    debugger
+    // debugger
     console.log("🚀 ~ PublicRoute ~ isAuthenticated:", isAuthenticated)
   return isAuthenticated ? (
     <Navigate to="/" replace />

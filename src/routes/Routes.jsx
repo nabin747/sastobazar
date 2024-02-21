@@ -7,6 +7,7 @@ import CheckoutPage from "../pages/CheckoutPage";
 import LoginPage from "../pages/LoginPage";
 import PublicRoute from "./PublicRoute";
 import PrivateRoute from "./PrivateRoute";
+import Login from "../pages/auth/Login";
 
 const RoutesMain = () => {
   return (
@@ -17,7 +18,7 @@ const RoutesMain = () => {
       <Route path="/cart" element={<CartPage />} />
       {/* <Route path="/checkout" element={<CheckoutPage />} /> */}
       <Route  path="/checkout" element={<PrivateRoute element={<CheckoutPage />} />} />
-      <Route path="/login" element={<PublicRoute element={<LoginPage />} />} />
+      <Route path="/login" element={<PublicRoute element={<Login />} />} />
       
     </Routes>
     </BrowserRouter>
